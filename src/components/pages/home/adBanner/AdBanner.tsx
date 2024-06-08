@@ -12,7 +12,7 @@ const AdBanner = () => {
         возможность воспользоваться нашей 
         новогодней скидкой 20% на любой курс!
       </p>
-      <img className="banner__image" src="/images/specialGift/specialImage.svg" alt="Скидка" />
+      <img className="banner__image" src="images/specialGift/specialImage.svg" alt="Скидка" />
     </div>
   );
 };

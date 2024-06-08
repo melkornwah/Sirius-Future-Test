@@ -25,7 +25,7 @@ const Header = () => {
             className="header__menu-item"
             type="button"
           >
-            <img className="header__messages-icon" src="/images/header/messages.svg" alt="Сообщения" />
+            <img className="header__messages-icon" src="images/header/messages.svg" alt="Сообщения" />
             <p className="header__messages-amount">
               2
             </p>
@@ -35,9 +35,9 @@ const Header = () => {
             type="button"
             onClick={handleDropdown}
           >
-            <img className="header__profile-icon" src={`/images/profile/${username}/avatar.svg`} alt="Профиль" />
+            <img className="header__profile-icon" src={`images/profile/${username}/avatar.svg`} alt="Профиль" />
             <div className="header__dropdown">
-              <img className="header__dropdown-icon" src="/images/header/dropdown.svg" alt="↓" />
+              <img className="header__dropdown-icon" src="images/header/dropdown.svg" alt="↓" />
             </div>
           </button>
         </div>

@@ -53,7 +53,7 @@ const Dropdown = ({ handleDropdown }: DropdownProps) => {
                       handleUserChange(username, name);
                     }}
                   >
-                    <img className="user__avatar" src={`/images/profile/${username}/avatar.svg`} alt="Аватар" />
+                    <img className="user__avatar" src={`images/profile/${username}/avatar.svg`} alt="Аватар" />
                     <div className="user__data">
                       <h3 className="user__name">
                         {name}
@@ -79,15 +79,15 @@ const Dropdown = ({ handleDropdown }: DropdownProps) => {
           onClick={handleLogOut}
         >
           Выход
-          <img className="exit__icon" src="/images/dropdown/exit.svg" alt="Выход" />
+          <img className="exit__icon" src="images/dropdown/exit.svg" alt="Выход" />
         </button>
-        <img className="dropdown__triangle" src="/images/dropdown/triangle.svg" alt="^" />
+        <img className="dropdown__triangle" src="images/dropdown/triangle.svg" alt="^" />
         <button
           className="dropdown__close"
           type="button"
           onClick={closeDropdown}
         >
-          <img className="dropdown__close-icon" src="/images/dropdown/close.svg" alt="X" />
+          <img className="dropdown__close-icon" src="images/dropdown/close.svg" alt="X" />
         </button>
       </div>
     </div>

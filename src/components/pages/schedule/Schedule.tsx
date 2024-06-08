@@ -36,7 +36,7 @@ const Schedule = () => {
           type="button"
         >
           Выбрать предмет
-          <img className="schedule__dropdown-icon" src="/images/schedule/dropdown.svg" alt="↓" />
+          <img className="schedule__dropdown-icon" src="images/schedule/dropdown.svg" alt="↓" />
         </button>
         <div className="schedule__change">
           <button
@@ -54,7 +54,7 @@ const Schedule = () => {
               className="month__button"
               type="button"
             >
-              <img className="month__button-icon" src="/images/schedule/arrow.svg" alt="Назад" />
+              <img className="month__button-icon" src="images/schedule/arrow.svg" alt="Назад" />
             </button>
             <h2
               className="schedule__current-month"
@@ -65,7 +65,7 @@ const Schedule = () => {
               className="month__button month__button_next"
               type="button"
             >
-              <img className="month__button-icon" src="/images/schedule/arrow.svg" alt="Вперёд" />
+              <img className="month__button-icon" src="images/schedule/arrow.svg" alt="Вперёд" />
             </button>
           </div>
           <div className="schedule__control-addition">
@@ -79,7 +79,7 @@ const Schedule = () => {
               className="schedule__faq"
               type="button"
             >
-              <img className="schedule__faq-icon" src="/images/schedule/faq.svg" alt="?" />
+              <img className="schedule__faq-icon" src="images/schedule/faq.svg" alt="?" />
             </button>
           </div>
         </div>

@@ -61,7 +61,7 @@ const UpcomingLessons = () => {
                     {time}
                   </p>
                   <div className="lesson__teacher">
-                    <img className="lesson__teacher-icon" src="/images/teachers/teacherIcon.svg" alt="Учитель" />
+                    <img className="lesson__teacher-icon" src="images/teachers/teacherIcon.svg" alt="Учитель" />
                     <p className="lesson__teacher-name">
                       {teacher}
                     </p>

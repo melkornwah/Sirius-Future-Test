@@ -19,7 +19,7 @@ const HomeworkButton = ({ text, icon, backgroundColor }: HomeworkButtonProps) =>
       <h2 className="homework__heading">
         {text}
       </h2>
-      <img className="homework__icon" src={`/images/homework/${icon}.svg`} alt={text} />
+      <img className="homework__icon" src={`images/homework/${icon}.svg`} alt={text} />
     </button>
   );
 };

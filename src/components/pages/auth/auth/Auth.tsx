@@ -55,7 +55,7 @@ const Auth = () => {
   return (
     <div className="auth-page">
       <div className="auth">
-        <img className="auth__logo" alt="Sirius Future" src="/images/logo/auth.svg" />
+        <img className="auth__logo" alt="Sirius Future" src="images/logo/auth.svg" />
         <div className="auth__container">
           <h1 className="auth__heading">
             Вход в Sirius Future

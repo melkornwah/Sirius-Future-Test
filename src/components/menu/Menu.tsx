@@ -10,12 +10,12 @@ type MenuProps = {
 const Menu = ({ currentPage, setCurrentPage }: MenuProps) => {
   return (
     <div className="menu">
-      <img className="menu__logo" src="/images/logo/menu.svg" alt="Sirius Future" />
+      <img className="menu__logo" src="images/logo/menu.svg" alt="Sirius Future" />
       <ul className="menu__list">
         {
           menu.map(({ image, text }) => {
             const isSelected = image === currentPage
-            const imagePath = `/images/menuIcons/${isSelected ? "selected/" : "idle/"}/${image}.svg`;
+            const imagePath = `images/menuIcons/${isSelected ? "selected/" : "idle/"}/${image}.svg`;
 
             return (
               <li key={image} className={`list-item ${isSelected ? "list-item_selected" : ""}`}>
@@ -48,7 +48,7 @@ const Menu = ({ currentPage, setCurrentPage }: MenuProps) => {
         >
           Узнать
         </button>
-        <img className="special__image" src="/images/menu/special/gift.svg" alt="Подарок" />
+        <img className="special__image" src="images/menu/special/gift.svg" alt="Подарок" />
       </div>
     </div>
   );
