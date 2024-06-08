@@ -35,7 +35,7 @@ const Lesson = ({
             unpaidFor ? (
               <img
                 className="lesson__unpaid"
-                src="/images/schedule/unpaid.svg"
+                src="images/schedule/unpaid.svg"
                 alt="Не оплачено"
               />
             ) : null
