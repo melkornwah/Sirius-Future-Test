@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Sirius-Future-Test/static/css/main.b74e7746.css",
+    "main.js": "/Sirius-Future-Test/static/js/main.ed8a0463.js",
+    "static/js/453.e5c6e17b.chunk.js": "/Sirius-Future-Test/static/js/453.e5c6e17b.chunk.js",
+    "static/media/CirceRounded-Light.otf": "/Sirius-Future-Test/static/media/CirceRounded-Light.bee4cf44694a05bdd393.otf",
+    "static/media/CirceRounded-Bold.otf": "/Sirius-Future-Test/static/media/CirceRounded-Bold.63f1293bc8249ff6b698.otf",
+    "static/media/CirceRounded-Regular.otf": "/Sirius-Future-Test/static/media/CirceRounded-Regular.401e2caac8a3ab1649df.otf",
+    "static/media/CirceRounded-ExtraLight.otf": "/Sirius-Future-Test/static/media/CirceRounded-ExtraLight.c0f36890d2cbfb365edd.otf",
+    "static/media/CirceRounded-Alt-Bold.otf": "/Sirius-Future-Test/static/media/CirceRounded-Alt-Bold.b138e3f8432bfc20faad.otf",
+    "static/media/CirceRounded-ExtraBold.otf": "/Sirius-Future-Test/static/media/CirceRounded-ExtraBold.6a3cc715559f9889975d.otf",
+    "static/media/CirceRounded-Alt-ExtraBold.otf": "/Sirius-Future-Test/static/media/CirceRounded-Alt-ExtraBold.da69134cebd0bf4455ff.otf",
+    "static/media/CirceRounded-Thin.otf": "/Sirius-Future-Test/static/media/CirceRounded-Thin.4754039ca3ec37ccb83f.otf",
+    "index.html": "/Sirius-Future-Test/index.html",
+    "main.b74e7746.css.map": "/Sirius-Future-Test/static/css/main.b74e7746.css.map",
+    "main.ed8a0463.js.map": "/Sirius-Future-Test/static/js/main.ed8a0463.js.map",
+    "453.e5c6e17b.chunk.js.map": "/Sirius-Future-Test/static/js/453.e5c6e17b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b74e7746.css",
+    "static/js/main.ed8a0463.js"
+  ]
+}
