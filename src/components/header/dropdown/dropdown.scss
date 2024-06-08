@@ -1,0 +1,131 @@
+.dropdown {
+  position: absolute;
+  top: 68px;
+  right: 50px;
+  z-index: 999;
+  width: 190px;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  border: 1px solid #7362BC;
+
+  .dropdown__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 12px;
+    width: 100%;
+
+    .dropdown__heading {
+      font-family: "Circe Rounded Regular";
+      font-size: 16px;
+      line-height: 135%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .dropdown__userlist {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 12px;
+      border-bottom: #EEEEFF 1px solid;
+
+      .user {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        border-radius: 12px;
+        
+        .user__button {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin: 0;
+          padding: 8px;
+          background: none;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          border-radius: 12px;
+
+          .user__avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 100px;
+            border: 1px solid #7362BC;
+          }
+  
+          .user__data {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+  
+            .user__name {
+              font-family: "Circe Rounded Regular";
+              font-size: 12px;
+              line-height: 135%;
+              color: #323854;
+              margin: 0;
+              padding: 0;
+              text-align: start;
+            }
+  
+            .user__selected {
+              font-family: "Circe Rounded Light";
+              font-size: 10px;
+              line-height: 12px;
+              color: #323854;
+              margin: 0;
+              padding: 0;
+              text-align: start;
+            }
+          }
+        }
+      }
+
+      .user_selected {
+        background-color: #EEEEFF;
+      }
+    }
+
+    .exit {
+      width: 100%;
+      padding: 8px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #008AFF;
+      font-family: "Circe Rounded Regular";
+      font-size: 16px;
+      line-height: 135%;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown__triangle {
+      position: absolute;
+      top: -42px;
+      right: 5px;
+      width: 16px;
+      height: 12px;
+    }
+
+    .dropdown__close {
+      position: absolute;
+      top: -18px;
+      right: -18px;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

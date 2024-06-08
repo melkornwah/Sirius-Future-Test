@@ -1,0 +1,23 @@
+.checkbox {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 4px;
+  margin: 4px 0 0 0;
+  padding: 4px;
+
+  .checkbox__input {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .checkbox__label {
+    font-family: "Circe Rounded Regular";
+    font-size: 12px;
+    line-height: 135%;
+    margin: 0;
+    color: #79747F;
+  }
+}

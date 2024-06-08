@@ -1,0 +1,107 @@
+.lesson {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 5;
+  
+  .lesson__button {
+    padding: 2px;
+    width: 100%;
+    border: none;
+    background: none;
+    border-radius: 2px;
+    
+    .lesson__container {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      border-radius: 1px;
+      padding: 1px;
+      position: relative;
+
+      .lesson__time {
+        font-family: "Circe Rounded Regular";
+        font-size: 12px;
+        line-height: 16px;
+        margin: 0;
+        text-align: start;
+      }
+
+      .lesson__name {
+        font-family: "Circe Rounded Regular";
+        font-size: 10px;
+        line-height: 8px;
+        margin: 0;
+        text-align: start;
+      }
+
+      .lesson__unpaid {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .lesson__button_finished {
+    border: 1px solid #22782B;
+  }
+
+  .lesson__button_cancelled {
+    border: 1px solid #79747F;
+
+    .lesson__time .lesson__name {
+      text-decoration: line-through;
+    }
+  }
+
+  .lesson__button_debt {
+    border: 1px solid #E12828;
+  }
+
+  .lesson__button_available {
+    border: 1px solid #DECFFF;
+    background-color: #EEEEFF;
+  }
+
+  .lesson__button_occupied {
+    border: 1px solid #C8C5CD;
+    background-color: #F5F5F5;
+  }
+
+  .lesson__button_planned {
+    border: 1px solid #BBE7B9;
+    background-color: #D7F0D6;
+  }
+}
+
+.lesson_shadowed {
+  box-shadow: rgba($color: #21106E, $alpha: 0.04) 0px 14px 14px;
+
+  .lesson__button {
+    border: 1px solid #7362BC;
+  }
+
+  .lesson__button_finished .lesson__container {
+    border: 1px solid #22782B;
+  }
+
+  .lesson__button_cancelled .lesson__container {
+    border: 1px solid #79747F;
+  }
+
+  .lesson__button_debt .lesson__container {
+    border: 1px solid #E12828; 
+  }
+
+  .lesson__button_planned {
+    background: none;
+  }
+
+  .lesson__button_planned .lesson__container {
+    background-color: #D7F0D6;
+  }
+}

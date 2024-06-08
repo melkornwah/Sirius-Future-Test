@@ -1,0 +1,61 @@
+.next-lesson {
+  width: 220px;
+  padding: 32px 62px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  background-color: #FFF1CB;
+  border-radius: 30px;
+  color: #323854;
+
+  .next-lesson__heading {
+    font-family: "Circe Rounded Regular";
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .next-lesson__timer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    .timer__item {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+
+      .timer__number {
+        font-family: "Circe Rounded Regular";
+        font-size: 36px;
+        line-height: 35px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .timer__text {
+        font-family: "Circe Rounded Regular";
+        font-size: 15px;
+        line-height: 135%;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  .next-lesson__button {
+    font-family: "Circe Rounded Regular";
+    font-size: 16px;
+    line-height: 135%;
+    padding: 13px 86px;
+    border-radius: 30px;
+    border: none;
+    background: none;
+    color: #323854;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='30' ry='30' stroke='%23323854FF' stroke-width='1' stroke-dasharray='7%2c 7' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,17 @@
+.text-input {
+  padding: 10px 12px;
+  font-family: "Circe Rounded Regular";
+  font-size: 12px;
+  line-height: 135%;
+  border: #ECECEC solid 1px;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+
+  ::placeholder {
+    font-family: "Circe Rounded Regular";
+    font-size: 12px;
+    line-height: 135%;
+    color: #79747F;
+  }
+}

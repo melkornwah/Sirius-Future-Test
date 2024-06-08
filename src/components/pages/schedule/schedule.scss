@@ -1,0 +1,208 @@
+.schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+
+  .schedule__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .schedule__lesson {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 253px;
+      margin: 0;
+      padding: 10px 12px;
+      background: #FFFFFF;
+      border: 1px solid #ECECEC;
+      border-radius: 8px;
+      font-family: "Circe Rounded Regular";
+      font-size: 12px;
+      line-height: 16px;
+      color: #79747F;
+      cursor: pointer;
+
+      .schedule__dropdown-icon {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .schedule__change {
+      width: 344px;
+
+      .button {
+        line-height: 20px;
+      }
+    }
+  }
+
+  .schedule__calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 573px;
+
+    .schedule__calendar-control {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      padding: 4px 0;
+
+      .schedule__calendar-month {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .month__button {
+          display: flex;
+          align-items: center;
+          width: 24px;
+          height: 24px;
+          background: none;
+          border: none;
+          padding: 0;
+          cursor: pointer;
+
+          .month__button-icon {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .month__button_next {
+          transform: rotate(180deg);
+        }
+
+        .schedule__current-month {
+          margin: 0;
+          padding: 0;
+          font-family: "Circe Rounded Bold";
+          font-size: 16px;
+          line-height: 20px;
+          color: #323854;
+        }
+      }
+
+      .schedule__control-addition {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .schedule__today {
+          font-family: "Circe Rounded Regular";
+          font-size: 12px;
+          line-height: 16px;
+          color: #323854;
+          padding: 8px 20px;
+          background: none;
+          border: 1px solid #8D7FC7;
+          border-radius: 15px;
+          cursor: pointer;
+        }
+
+        .schedule__faq {
+          width: 24px;
+          height: 24px;
+          padding: 0;
+          margin: 0;
+          background: none;
+          border: none;
+          cursor: pointer;
+
+          .schedule__faq-icon {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .schedule__calendar-container {
+      display: flex;
+      flex-direction: column;
+
+      .schedule__weekdays {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        width: 100%;
+        height: 24px;
+  
+        .schedule__weekday {
+          text-align: end;
+          margin: 0;
+          padding: 0 6px 0 0;
+          font-family: "Circe Rounded Regular";
+          font-size: 15px;
+          line-height: 20px;
+          color: #79747F;
+        }
+      }
+
+      .schedule__days {
+        display: grid;
+        grid-template: repeat(4, 1fr) / repeat(7, 1fr);
+        border-left: 1px solid #ECECEC;
+        border-top: 1px solid #C8C5CD;
+
+        .day {
+          margin: 0;
+          border-right: 1px solid #ECECEC;
+          border-bottom: 1px solid #ECECEC;
+          background-color: #FFFFFF;
+          overflow: hidden;
+          
+          .day__container {
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+            padding: 4px;
+
+            .day__number {
+              margin: 0;
+              text-align: end;
+              width: 100%;
+              font-family: "Circe Rounded Light";
+              font-size: 12px;
+              line-height: 12px;
+              color: #323854;
+            }
+  
+            .day__lessons {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+              margin: 0;
+              padding: 0;
+              height: 70px;
+            }
+          }
+        }
+
+        .day_old {
+          .day__number {
+            margin: 0;
+            text-align: end;
+            width: 100%;
+            font-family: "Circe Rounded Light";
+            font-size: 12px;
+            line-height: 12px;
+            color: #C8C5CD;
+          }
+        }
+
+        .day_colored {
+          .day__number {
+            color: #E12828;
+          }
+        }
+
+        :nth-of-type(7n - 1), :nth-of-type(7n) {
+          background-color: #FBFBFC;
+        }
+      }
+    }
+  }
+}

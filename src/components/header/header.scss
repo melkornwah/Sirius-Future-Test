@@ -1,0 +1,107 @@
+.header {
+  width: 100%;
+  height: 66px;
+  position: relative;
+
+  .header-container {
+    width: calc(100% - 82px);
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 32px;
+    border-radius: 0 0 20px 20px;
+    background-color: #FDFDFF;
+    border-bottom: 1px solid #F6F6FE;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+  }
+
+  .header__undershadow {
+    position: absolute;
+    top: 47px;
+    right: 0;
+    z-index: 1;
+    height: 20px;
+    width: 100%;
+    box-shadow: rgba($color: #8F8FB7, $alpha: 0.15) 0 10px 12px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .header__heading {
+    font-family: "Circe Rounded Regular";
+    font-size: 24px;
+    line-height: 24px;
+    color: #323854;
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+    span {
+      color: #7362BC;
+    }
+  }
+
+  .header__menu {
+    display: flex;
+    gap: 16px;
+
+    .header__menu-item {
+      display: flex;
+      border: #7362BC 1px solid;
+      border-radius: 50%;
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+      background: none;
+
+      .header__messages-icon {
+        padding: 9px;
+      }
+
+      .header__messages-amount {
+        font-family: "Circe Rounded Bold";
+        font-size: 8px;
+        line-height: 12px;
+        position: absolute;
+        top: -3px;
+        right: -3px;
+        padding: 2px 4px;
+        color: #FFFFFF;
+        background-color: #E84849;
+        border-radius: 50%;
+        width: 8px;
+        text-align: center;
+        margin: 0;
+      }
+
+      .header__profile-icon {
+        width: 42px;
+        height: 42px;
+      }
+
+      .header__dropdown {
+        position: absolute;
+        top: 50%;
+        right: -22px;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .header__profile-dropdown {
+          width: 10px;
+          height: 6px;
+        }
+      }
+    }
+
+    .header__menu_profile {
+      margin-right: 22px;
+    }
+  }
+}

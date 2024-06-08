@@ -1,0 +1,124 @@
+.balance {
+  width: 312px;
+  border: 1px solid #7362BC;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 28px 4px 30px 28px;
+  color: #323854;
+
+  .balance__heading {
+    font-family: "Circe Rounded Regular";
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .balance__lesson-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow-y: scroll;
+    height: 198px;
+
+    .balance__lesson {
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+      padding: 0;
+      
+      .balance__lesson-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0 10px 0;
+
+        .lesson__name {
+          font-family: "Circe Rounded Regular";
+          font-size: 16px;
+          line-height: 20px;
+          margin: 0;
+        }
+  
+        .lesson__circle {
+          width: 40px;
+          height: 40px;
+          position: relative;
+          background-color: #EEEEFF;
+          border-radius: 50%;
+          padding: 0;
+  
+          .lesson__value {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: "Circe Rounded Regular";
+            font-size: 20px;
+            line-height: auto;
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    .balance__lesson::after {
+      margin-top: 4px;
+      content: "";
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #000;
+      box-sizing: border-box;
+    }
+
+    :last-child::after {
+      border: none;
+    }
+  }
+
+  .balance__button-container {
+    margin-top: 24px;
+    padding-right: 20px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    display: block;
+    height: 108px;
+    background: #EEEEFF;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+}
+
+.button {
+  font-family: "Circe Rounded Regular";
+  font-size: 16px;
+  line-height: 22px;
+  width: 100%;
+  height: 40px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-radius: 30px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button_purple {
+  background-color: #DECFFF;
+  color: #323854;
+}

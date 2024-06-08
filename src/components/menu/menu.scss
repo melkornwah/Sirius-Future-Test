@@ -1,0 +1,116 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 236px;
+  height: 704px;
+  margin: 0;
+  border-radius: 30px;
+  background-color: #EEEEFF;
+
+  .menu__logo {
+    padding: 0;
+    margin: 44px 0 40px 0;
+    width: 148px;
+    height: 58px;
+  }
+
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+    .list-item {
+      display: flex;
+      align-items: center;
+      width: calc(100% - 64px);
+      height: 40px;
+      margin: 0;
+      padding: 0 0 0 44px;
+      list-style: none;
+      cursor: pointer;
+
+      .list-item__button {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        width: 100%;
+        height: 100%;
+        border: none;
+        background: none;
+        cursor: pointer;
+        
+        .list-item__text {
+          font-family: "Circe Rounded Regular";
+          font-size: 16px;
+          line-height: 21px;
+          color: #434B74;
+        }
+      }
+    }
+
+    .list-item_selected {
+      background-color: #8D7FC7;
+      border-radius: 0 50px 50px 0;
+
+      .list-item__button {
+        .list-item__text {
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+
+  .special {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+    overflow: hidden;
+    background-color: #FDFDFF;
+    border-radius: 15px;
+    width: calc(100% - 90px);
+    padding: 16px 34px 10px 16px;
+    color: #323854;
+    margin: 50px 0 0 0;
+
+    .special__heading {
+      font-family: "Circe Rounded Regular";
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .special__text {
+      font-family: "Circe Rounded Light";
+      font-size: 10px;
+      line-height: 12px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .special__button {
+      font-family: "Circe Rounded Regular";
+      font-size: 12px;
+      line-height: 135%;
+      border: none;
+      border-radius: 15px;
+      background-color: #D8ECFF;
+      padding: 8px 16px;
+      margin: 6px 0 0 0;
+      width: 68px;
+      cursor: pointer;
+    }
+
+    .special__image {
+      position: absolute;
+      bottom: -20px;
+      left: 123px;
+      width: 81px;
+      height: 98px;
+    }
+  }
+}

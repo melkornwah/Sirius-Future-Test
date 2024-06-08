@@ -1,0 +1,146 @@
+.upcoming-lesson {
+  width: 652px;
+  border: 1px solid #7362BC;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 28px 28px 30px 28px;
+  color: #323854;
+
+  .upcoming-lesson__heading {
+    font-family: "Circe Rounded Regular";
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .upcoming-lesson__list {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+
+    .lesson {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .lesson-container {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        // border-bottom: 1px solid #EEEEFF;
+        padding: 7px 40px 5px 0;
+        width: 612px;
+        position: relative;
+
+        .lesson__date {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          width: 42px;
+  
+          .lesson__day {
+            font-family: "Circe Rounded Regular";
+            font-size: 32px;
+            line-height: 32px;
+            margin: 0;
+            padding: 0;
+          }
+  
+          .lesson__month {
+            font-family: "Circe Rounded Regular";
+            font-size: 12px;
+            line-height: 16px;
+            margin: 0;
+            padding: 0;
+          }
+        }
+  
+        .lesson__name {
+          font-family: "Circe Rounded Regular";
+          font-size: 16px;
+          line-height: 22px;
+          margin: 0 0 0 10px;
+          padding: 0;
+          width: 180px;
+        }
+  
+        .lesson__time {
+          font-family: "Circe Rounded Regular";
+          font-size: 12px;
+          line-height: 22px;
+          margin: 0 0 0 18px;
+          padding: 0;
+          width: 70px;
+        }
+  
+        .lesson__teacher {
+          display: flex;
+          gap: 2px;
+          align-items: center;
+  
+          .lesson__teacher-icon {
+            width: 16px;
+            height: 16px;
+          }
+  
+          .lesson__teacher-name {
+            font-family: "Circe Rounded Light";
+            font-size: 12px;
+            line-height: 22px;
+            margin: 0;
+            padding: 0;
+          }
+        }
+  
+        .lesson__buttons {
+          display: flex;
+          gap: 4px;
+          position: absolute;
+          top: 50%;
+          right: 40px;
+          transform: translateY(-50%);
+  
+          .lesson__button {
+            font-family: "Circe Rounded Regular";
+            font-size: 12px;
+            line-height: 22px;
+            background: none;
+            color: #323854;
+            border: none;
+            border-radius: 15px;
+            padding: 8px 10px;
+            cursor: pointer;
+          }
+  
+          .lesson__button_filled {
+            background: #7362BC;
+            color: #FFFFFF;
+            border: none;
+          }
+        }
+      }
+    }
+
+    .lesson::after {
+      margin-top: 4px;
+      content: "";
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #000;
+      box-sizing: border-box;
+    }
+    
+    :last-child::after {
+      border: none;
+    }
+  }
+
+  .upcoming-lesson__button-container {
+    margin: 21px 0 0 0;
+    width: 344px;
+    align-self: center;
+  }
+}
